@@ -33,15 +33,21 @@ public class FractionTest {
     }
 
     @Test
-    public void testMultiplicar(){
+    public void testMultiplicar() {
         Fraction fr = fraction.multiply(fraction);
         assertEquals(10, fr.getNumerator());
         assertEquals(8, fr.getDenominator());
     }
-        
+
     @Test
     public void testIsPropia() {
         assertEquals(false, fraction.isPropia());
+    }
+
+    @Test
+    public void testEquivalent() {
+        Fraction equivalente = new Fraction(15, 12);
+        assertEquals(true, this.fraction.equivalent(equivalente));
     }
 
 }
