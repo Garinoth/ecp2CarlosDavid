@@ -35,8 +35,8 @@ public class FractionTest {
     @Test
     public void testMultiplicar() {
         Fraction fr = fraction.multiply(fraction);
-        assertEquals(10, fr.getNumerator());
-        assertEquals(8, fr.getDenominator());
+        assertEquals(25, fr.getNumerator());
+        assertEquals(16, fr.getDenominator());
     }
 
     @Test
