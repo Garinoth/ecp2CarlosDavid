@@ -8,7 +8,7 @@ public class DecimalCollection {
 
     public DecimalCollection() {
         this.collection = new ArrayList<Double>();
-    } 
+    }
 
     public void add(double value) {
         this.collection.add(value);
@@ -36,8 +36,12 @@ public class DecimalCollection {
     }
 
     public double minimum() {
-        // TODO Auto-generated method stub
-        return 0;
+        double minimum = Double.POSITIVE_INFINITY;
+        for (double item : this.collection) {
+            if (item < minimum)
+                minimum = item;
+        }
+        return minimum;
     }
 
 }
