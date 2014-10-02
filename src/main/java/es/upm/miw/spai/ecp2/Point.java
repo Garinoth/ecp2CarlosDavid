@@ -43,8 +43,7 @@ public class Point {
     }
 
 	public double distancia(Point point) {
-		// TODO Auto-generated method stub
-		return (Double) null;
+		return Math.sqrt(Math.pow(point.getX()-this.getX(), 2)+Math.pow(point.getY()-this.getY(), 2));
 	}
     
 }

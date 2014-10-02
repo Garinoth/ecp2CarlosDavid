@@ -59,18 +59,19 @@ public class Fraction {
     public double decimal() {
         return (double) numerator / denominator;
     }
+
     public Fraction multiply(Fraction fraction) {
-    	return new Fraction(numerator*fraction.numerator,denominator*fraction.denominator);
+        return new Fraction(numerator * fraction.numerator, denominator * fraction.denominator);
     }
 
-	public boolean isPropia() {
-		// TODO Auto-generated method stub
-		return (Boolean) null;
-	}
-
-    public boolean equivalent(Fraction equivalente) {
+    public boolean isPropia() {
         // TODO Auto-generated method stub
-        return false;
+        return (Boolean) null;
     }
-    
+
+    public boolean equivalent(Fraction fraction) {
+        return this.getNumerator() * fraction.getDenominator() == this.getDenominator()
+                * fraction.getNumerator();
+    }
+
 }
