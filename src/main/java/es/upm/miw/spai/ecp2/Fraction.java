@@ -67,5 +67,9 @@ public class Fraction {
 		// TODO Auto-generated method stub
 		return (Boolean) null;
 	}
+	
+	public boolean equivalent(Fraction fraction){
+	    return this.getNumerator()*fraction.getDenominator() == this.getDenominator() * fraction.getNumerator();
+	}
     
 }
