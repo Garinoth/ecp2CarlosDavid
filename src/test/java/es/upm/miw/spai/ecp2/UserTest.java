@@ -31,4 +31,9 @@ public class UserTest {
         assertEquals("C.", this.user.initials());
     }
 
+    @Test
+    public void testFullNameCaps() {
+        assertEquals("CHARLES CARMICHAEL", this.user.fullNameCaps());
+    }
+
 }
