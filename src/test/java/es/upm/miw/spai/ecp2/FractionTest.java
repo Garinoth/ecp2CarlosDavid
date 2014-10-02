@@ -32,4 +32,16 @@ public class FractionTest {
         assertEquals(1.25, fraction.decimal(), 10e-2);
     }
 
+    @Test
+    public void testMultiplicar(){
+        Fraction fr = fraction.multiply(fraction);
+        assertEquals(10, fr.getNumerator());
+        assertEquals(8, fr.getDenominator());
+    }
+        
+    @Test
+    public void testIsPropia() {
+        assertEquals(false, fraction.isPropia());
+    }
+
 }

@@ -33,5 +33,10 @@ public class DecimalCollectionTest {
     public void testHigher() {
         assertEquals(13, this.collection.higher(), 10e-1);
     }
+    
+    @Test
+    public void testMinimum(){
+        assertEquals(1.0, collection.minimum(), 10e-1);
+    }
 
 }
