@@ -50,6 +50,6 @@ public class PointTest {
 
     @Test
     public void testDistancia(){
-    	assertEquals(4.0,pt.distancia(new Point(2,1)),10e-3);
+    	assertEquals(2.0,pt.distancia(new Point(2,1)),10e-3);
     }
 }
