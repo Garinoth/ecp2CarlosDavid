@@ -62,5 +62,10 @@ public class Fraction {
     public Fraction multiply(Fraction fraction) {
     	return new Fraction(numerator*fraction.numerator,denominator*fraction.denominator);
     }
+
+	public boolean isPropia() {
+		// TODO Auto-generated method stub
+		return (Boolean) null;
+	}
     
 }
